@@ -40,6 +40,15 @@ for(var i = 0; i < numberOfButtons; i++){
    }
       });
 }
+function buttonAnimation(currentKey) {
+    const activeButton = document.querySelector('.' + currentKey)
+    activeButton.classList.add('pressed');
+    setTimeout(function () {
+        activeButton.classList.remove('pressed');
+    }, 100)
+}
+
+
 
 
 // Source - https://stackoverflow.com/a
